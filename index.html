@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guille Bouix | Portafolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/icon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo">
+            </div>
+            <ul class="links">
+                <li><a href="#home" class="active" data-translate="home">Inicio</a></li>
+                <li><a href="#services" data-translate="services">Servicios</a></li>
+                <li><a href="#skills" data-translate="skills">Habilidades</a></li>
+                <li><a href="#projects" data-translate="projects">Proyectos</a></li>
+                <li><a href="#contact" data-translate="contact">Contacto</a></li>
+            </ul>
+
+            <button id="language-toggle" class="language-button" data-translate="toggleLanguage">ES / EN</button>
+
+            <div class="toggle_btn">
+                <i class='bx bx-menu'></i>
+            </div>
+            
+            <div class="dropdown_menu">
+                <li><a href="#home" data-translate="home">Inicio</a></li>
+                <li><a href="#services" data-translate="services">Servicios</a></li>
+                <li><a href="#skills" data-translate="skills">Habilidades</a></li>
+                <li><a href="#projects" data-translate="projects">Proyectos</a></li>
+                <li><a href="#contact" data-translate="contact">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="home" id="home" data-aos="fade">
+            <div class="about">
+                <h1 data-translate="hello">Hola, soy <span>Guille Bouix</span></h1>
+
+                <h3>Un <span class="animatedText"></span></h3>
+
+                <p data-translate="intro">
+                    Soy de la provincia de Misiones, Argentina, y actualmente me encuentro cursando la 
+                    carrera de Analista Programador. Mi principal objetivo es desarrollar soluciones 
+                    digitales que combinen simplicidad y funcionalidad, manteniendo siempre un enfoque en 
+                    la mejor calidad.
+                </p>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/guillermo-bouix/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/GuilleBouix" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/guille.bx7" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/5493755653522?text=Hola,%20te%20contacto%20desde%20tu%20portafolio.%20Me%20gustaria%20saber%20más%20sobre%20tus%20proyectos%20o%20cómo%20podemos%20trabajar%20juntos." target="_blank"><i class='bx bxl-whatsapp'></i></a>
+
+                </div>
+
+                <a class="curriculum-button" href="https://drive.google.com/file/d/1Z4IWdmzK_d-TcfELHQcZcp-OcS3ADapO/view" data-translate="cvButton" target="_blank">Mi Curriculum</a>
+            </div>
+
+            <div class="image">
+                <img src="/img/logo.svg" alt="profile">
+            </div>
+        </section>
+
+        <section class="services" id="services" data-aos="zoom-in-up">
+            <div class="services-content">
+                <div class="cards">
+                    <!-- Tarjeta Desarrollo Web -->
+                    <div class="web-card card">
+                        <img src="/img/web-card.jpg" alt="Diseño Web" class="card-image">
+                        <h2 data-translate="DesarrolloWeb">Desarrollo Web</h2>
+                        <p data-translate="webDescription">
+                            Diseñamos y desarrollamos páginas web modernas y personalizadas, optimizadas para dispositivos móviles 
+                            y con un enfoque en la experiencia del usuario. Si quieres que tu negocio crezca, necesitas un sitio web.
+                        </p>
+
+                        <button class="btn" data-translate="viewPlans" onclick="openModal()">Ver Planes</button>
+                    </div>
+        
+                    <!-- Tarjeta Desarrollo de Software -->
+                    <div class="software-card card">
+                        <img src="/img/software-card.jpg" alt="Desarrollo de Software" class="card-image">
+                        <h2 data-translate="softwareDevelopment">Desarrollo de Software</h2>
+                        <p data-translate="softwareDescription">
+                            Creamos soluciones tecnológicas a medida, desde aplicaciones sencillas hasta sistemas más complejos. 
+                            Nuestro enfoque garantiza eficiencia, escalabilidad y seguridad para cubrir necesidades específicas de tu negocio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills" id="skills" data-aos="zoom-in-up">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="/img/Python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/JavaScript.png" alt="Python">
+                    <span>JavaScript</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/PHP.png" alt="Python">
+                    <span>PHP</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/Flask.png" alt="Python">
+                    <span>Flask</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/HTML.png" alt="Python">
+                    <span>HTML</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/css.png" alt="Python">
+                    <span>CSS</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/Bootstrap.png" alt="Python">
+                    <span>Bootstrap</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/MySQL.png" alt="Python">
+                    <span>MySQL</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/phpMyAdmin.png" alt="Python">
+                    <span>phpMyAdmin</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/SQLite.png" alt="Python">
+                    <span>SQLite3</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/Figma.png" alt="Python">
+                    <span>Figma</span>
+                </div>
+                
+                <div class="skill-item">
+                    <img src="/img/Photoshop.png" alt="Python">
+                    <span>Photoshop</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="projects" id="projects" data-aos="zoom-in-up">
+            <div class="projects-content">
+                <div class="project-card">
+                    <div class="project">
+                        <img src="/img/project-1.jpg" alt="Project 1" class="project-card-image">
+                        <h2>Training Plus</h2>
+                        <p data-translate="trainingPlusDescription">
+                            Training+ es mi proyecto de tesis universitaria en desarrollo. Es un sistema que tiene como objetivo gestionar 
+                            entrenamientos personalizados. Permitirá a los entrenadores supervisar y dar seguimiento a sus alumnos, creando y 
+                            asignando rutinas según sus necesidades y metas, optimizando el proceso de entrenamiento.
+                        </p>
+
+                        <div class="read-more">
+                            <div class="project-languages">
+                                <i class='bx bxl-python'></i>
+                                <i class='bx bxl-javascript'></i>
+                                <i class='bx bxs-data'></i>
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project">
+                        <img src="/img/project-2.jpg" alt="Project 2" class="project-card-image">
+                        <h2>QuickSell - POS</h2>
+                        <p data-translate="quickSellDescription">
+                            QuickSell es una aplicación de escritorio y web diseñada para la gestión de ventas. 
+                            Ofrece control de stock, manejo de clientes y usuarios, generación de facturas, reportes 
+                            detallados y ejecución de ventas, brindando herramientas clave para optimizar procesos 
+                            comerciales.
+                        </p>
+
+                        <div class="read-more">
+                            <div class="project-languages">
+                                <i class='bx bxl-python'></i>
+                                <i class='bx bxl-javascript'></i>
+                                <i class='bx bxs-data'></i>
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project">
+                        <img src="/img/project-3.jpg" alt="Project 3" class="project-card-image">
+                        <h2>Portfolio v1</h2>
+                        <p data-translate="contactDescription">
+                            Portfolio v1 fue mi primer portafolio, con un diseño moderno y totalmente responsivo. 
+                            Desarrollado solo con HTML, CSS y JavaScript, incluía secciones como inicio, habilidades,
+                            proyectos y formulario de contacto.
+                        </p>
+
+                        <div class="read-more">
+                            <div class="project-languages">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-javascript'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact" data-aos="zoom-in-up">
+            <form action="https://formsubmit.co/bouix.dev@gmail.com" method="POST">
+                <div class="fullname-email">
+                    <input id="fullname" type="text" name="name" placeholder="Nombre Completo" required>
+                    <input id="email" type="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+
+                <div class="telephone-subject">
+                    <input id="phone" type="tel" name="phone" placeholder="Nro. de Teléfono">
+                    <input id="subject" type="text" name="subject" placeholder="Asunto" required>
+                </div>
+                
+                <div class="message">
+                    <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="messageBtn" data-translate="send">Contáctame</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2024 Guillermo Daniel Bouix</p>
+            <a href="#home" class="back-to-top" title="Volver Arriba"><i class='bx bx-chevron-up'></i></a>
+        </footer>
+        
+        <dialog id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="basic-plain">
+                    <h2 data-translate="basicPlanTitle">PLAN BASICO</h2>
+                    <h1 data-translate="basicPlanPrice">$ 130 USD</h1>
+        
+                    <div class="plain-content">
+                        <p><i class='bx bx-check'></i> <span data-translate="responsiveDesign">Diseño Responsivo</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="fourSections">4 Secciones</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="sslCertificate">Certificado SSL</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="seoOptimization">Optimización SEO</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="contactForm">Formulario de Contacto</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="threeMonthsSupport">3 Meses de Soporte Técnico</span></p>
+                    </div>
+                </div>
+                <div class="full-plain">
+                    <h2 data-translate="completePlanTitle">PLAN COMPLETO</h2>
+                    <h1 data-translate="completePlanPrice">$ 200 USD</h1>
+        
+                    <div class="plain-content">
+                        <p><i class='bx bx-check'></i> <span data-translate="responsiveDesign">Diseño Responsivo</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="sixSections">6 Secciones</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="googleAnalytics">Google Analytics</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="sslCertificate">Certificado SSL</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="hostingDeployment">Hosting y Despliegue</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="seoOptimization">Optimización SEO</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="contactForm">Formulario de Contacto</span></p>
+                        <p><i class='bx bx-check'></i> <span data-translate="sixMonthsSupport">6 Meses de Soporte Técnico</span></p>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        
+    </main>
+    <script>
+        function openModal() {
+            const modal = document.getElementById('simpleModal');
+            modal.showModal();
+            document.body.classList.add('modal-open'); // Agrega la clase
+        }
+    
+        function closeModal() {
+            const modal = document.getElementById('simpleModal');
+            modal.close();
+            document.body.classList.remove('modal-open'); // Quita la clase
+        }
+    
+        // Cerrar la modal al hacer clic fuera
+        document.getElementById('simpleModal').addEventListener('click', (event) => {
+            const modal = document.getElementById('simpleModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    
+        // Cerrar la modal al presionar la tecla ESC
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

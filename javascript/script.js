@@ -254,17 +254,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    (function() {
+        emailjs.init("uU6YQXHcxUhzh2rKk");
+     })();
+     
+     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
+     
+        const formData = {
+           name: document.getElementById("name").value,
+           email: document.getElementById("email").value,
+           message: document.getElementById("message").value
+        };
+     
+        emailjs.send("service_8w8rh02", "template_unmscc5", formData)
+           .then(function(response) {
+              console.log("Correo enviado con éxito: ", response);
+              alert("¡Mensaje enviado correctamente!");
+           }, function(error) {
+              console.error("Error al enviar el correo: ", error);
+              alert("Hubo un problema al enviar el mensaje. Intenta nuevamente.");
+           });
+     });
+     
 
-        emailjs.sendForm('service_8w8rh02', 'template_unmscc5', this)
-            .then(function() {
-                console.log('SUCCESS!');
-                alert('Message Sent Successfully!');
-            }, function(error) {
-                console.log('FAILED...', error);
-                alert('Message Failed to Send. Please try again later.');
-            });
-    });
-
+     function sendMail() {
+        let parms = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+            phone: document.getElementById("phone").value,
+            subject: document.getElementById("subject").value
+        };
+    
+        emailjs.send("service_8w8rh02", "template_unmscc5", parms).then(function(response) {
+            console.log("Email sent successfully: ", response);
+            alert("Message sent successfully!");
+            
+            // Clear the input fields after successful submission
+            document.getElementById("name").value = '';
+            document.getElementById("email").value = '';
+            document.getElementById("message").value = '';
+            document.getElementById("phone").value = '';
+            document.getElementById("subject").value = '';
+        }, function(error) {
+            console.error("Error sending the email: ", error);
+            alert("There was a problem sending the message. Please try again.");
+        });
+    }
+    
 })

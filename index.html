@@ -8,8 +8,18 @@
     <link rel="icon" href="/img/icon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script src="/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "uU6YQXHcxUhzh2rKk",
+        });
+    })();
+    </script>
+    <script src="/javascript/script.js"></script>
 </head>
 <body>
     <header>
@@ -233,9 +243,9 @@
         </section>
         
         <section class="contact" id="contact" data-aos="zoom-in-up">
-            <form id="contact-form">
+            <form id="contact-form" method="POST">
                 <div class="fullname-email">
-                    <input id="fullname" type="text" name="name" placeholder="Nombre Completo" required>
+                    <input id="name" type="text" name="name" placeholder="Nombre Completo" required>
                     <input id="email" type="email" name="email" placeholder="Correo Electrónico" required>
                 </div>
 
@@ -245,11 +255,11 @@
                 </div>
                 
                 <div class="message">
-                    <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+                    <textarea id="message" name="message" id="message" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
                 </div>
 
                 <div class="button-container">
-                    <button type="submit" class="messageBtn" data-translate="send">Contáctame</button>
+                    <button type="submit" class="messageBtn" data-translate="send" onclick="sendMail()">Contáctame</button>
                 </div>
 
             </form>

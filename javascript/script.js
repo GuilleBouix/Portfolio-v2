@@ -252,4 +252,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
 
+
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_8w8rh02', 'template_unmscc5', this)
+            .then(function() {
+                console.log('SUCCESS!');
+                alert('Message Sent Successfully!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Message Failed to Send. Please try again later.');
+            });
+    });
+
 })

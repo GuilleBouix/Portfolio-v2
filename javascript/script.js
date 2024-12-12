@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageButton = document.getElementById('language-toggle');
     const translations = {
         es: {
+            title: "Guille Bouix | Portafolio",
             home: "Inicio",
             services: "Servicios",
             skills: "Habilidades",
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sixMonthsSupport: "6 Meses de Soporte Técnico"
         },
         en: {
+            title: "Guille Bouix | Portfolio",
             home: "Home",
             services: "Services",
             skills: "Skills",

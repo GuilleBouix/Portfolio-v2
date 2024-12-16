@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         es: {
             title: "Guille Bouix | Portafolio",
             home: "Inicio",
+            about: "Sobre Mí",
+            biography: "Mi nombre es <b>Bouix Guillermo Daniel</b>, nací y crecí en <b>Misiones, Argentina</b>, donde desde muy joven me sentí atraído por la tecnología y las infinitas posibilidades que ofrece. Hace dos años decidí adentrarme en el mundo de la programación de manera autodidacta, lo que me motivó a explorar y construir sistemas destinados a simplificar procesos y abordar problemas comunes.<br><br>Actualmente estoy en la etapa final de la carrera de <b>Analista Programador</b>, un paso que me ha permitido consolidar y ampliar mis conocimientos en <b>desarrollo de software</b>. Me gusta experimentar con proyectos que combinan <b>creatividad</b> y <b>funcionalidad</b>, explorando maneras de optimizar procesos y materializar conceptos de forma práctica y efectiva.<br><br>Fuera de la programación, encuentro inspiración en la <b>música</b> y el <b>diseño digital</b>. Estos hobbies no solo me ayudan a desconectarme del código, sino que también me brindan nuevas perspectivas y formas de expresión que enriquecen mi visión como desarrollador. La búsqueda constante de <b>aprendizaje</b> y nuevas experiencias me motiva día a día a seguir creciendo como profesional.",
             services: "Servicios",
             skills: "Habilidades",
             projects: "Proyectos",
@@ -50,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
         en: {
             title: "Guille Bouix | Portfolio",
             home: "Home",
+            about: "About Me",
+            biography: "My name is <b>Bouix Guillermo Daniel</b>. I was born and raised in <b>Misiones, Argentina</b>, where I developed an early fascination with technology and its boundless potential. Two years ago, I decided to pursue programming as a self-taught endeavor, which ignited my passion for understanding and creating systems that solve everyday challenges and streamline tasks.<br><br>Currently, I am in the final stage of completing my <b>Programmer Analyst</b> degree, a step that has helped me consolidate and expand my knowledge in <b>software development</b>. I enjoy working on projects that combine <b>creativity</b> and <b>functionality</b>, exploring ways to optimize processes and bring concepts to life in practical and effective ways.<br><br>Outside programming, I find inspiration in <b>music</b> and <b>digital design</b>. These hobbies not only allow me to disconnect from coding but also provide fresh perspectives that enrich my vision as a developer. My constant pursuit of <b>learning</b> and new experiences drives me daily to grow as a professional.",
             services: "Services",
             skills: "Skills",
             projects: "Projects",

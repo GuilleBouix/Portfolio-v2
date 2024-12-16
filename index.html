@@ -58,9 +58,10 @@
             </div>
             <ul class="links">
                 <li><a href="#home" class="active" data-translate="home">Inicio</a></li>
-                <li><a href="#services" data-translate="services">Servicios</a></li>
+                <li><a href="#about-me" data-translate="about">Sobre Mí</a></li>
                 <li><a href="#skills" data-translate="skills">Habilidades</a></li>
                 <li><a href="#projects" data-translate="projects">Proyectos</a></li>
+                <li><a href="#services" data-translate="services">Servicios</a></li>
                 <li><a href="#contact" data-translate="contact">Contacto</a></li>
             </ul>
 
@@ -72,9 +73,10 @@
             
             <ul class="dropdown_menu">
                 <li><a href="#home" data-translate="home">Inicio</a></li>
-                <li><a href="#services" data-translate="services">Servicios</a></li>
+                <li><a href="#about-me" data-translate="about">Sobre Mí</a></li>
                 <li><a href="#skills" data-translate="skills">Habilidades</a></li>
                 <li><a href="#projects" data-translate="projects">Proyectos</a></li>
+                <li><a href="#services" data-translate="services">Servicios</a></li>
                 <li><a href="#contact" data-translate="contact">Contacto</a></li>
             </ul>
         </nav>
@@ -107,31 +109,24 @@
             </div>
         </section>
 
-        <section class="services" id="services" data-aos="zoom-in-up">
-            <div class="services-content">
-                <div class="cards">
-                    <!-- Tarjeta Desarrollo Web -->
-                    <article class="web-card card">
-                        <img src="/img/web-card.webp" alt="Diseño Web" class="card-image">
-                        <h2 data-translate="DesarrolloWeb">Desarrollo Web</h2>
-                        <p data-translate="webDescription">
-                            Diseñamos y desarrollamos páginas web modernas y personalizadas, optimizadas para dispositivos móviles 
-                            y con un enfoque en la experiencia del usuario. Si quieres que tu negocio crezca, necesitas un sitio web.
-                        </p>
-
-                        <button class="btn" title="Ver Planes" data-translate="viewPlans" onclick="openModal()">Ver Planes</button>
-                    </article>
-        
-                    <!-- Tarjeta Desarrollo de Software -->
-                    <article class="software-card card">
-                        <img src="/img/software-card.webp" alt="Desarrollo de Software" class="card-image">
-                        <h2 data-translate="softwareDevelopment">Desarrollo de Software</h2>
-                        <p data-translate="softwareDescription">
-                            Creamos soluciones tecnológicas a medida, desde aplicaciones sencillas hasta sistemas más complejos. 
-                            Nuestro enfoque garantiza eficiencia, escalabilidad y seguridad para cubrir necesidades específicas de tu negocio.
-                        </p>
-                    </article>
-                </div>
+        <section class="about-me" id="about-me" data-aos="fade">
+            <div class="bio">
+                <p data-translate="biography">
+                    Mi nombre es <b>Bouix Guillermo Daniel</b>, nací y crecí en <b>Misiones, Argentina</b>, donde desde muy joven me sentí atraído por la 
+                    tecnología y las infinitas posibilidades que ofrece. Hace dos años decidí adentrarme en el mundo de la programación de manera autodidacta, 
+                    lo que me motivó a explorar y construir sistemas destinados a simplificar procesos y abordar problemas comunes.
+                    <br>
+                    <br>
+                    Actualmente estoy en la etapa final de la carrera de <b>Analista Programador</b>, un paso que me ha permitido consolidar y ampliar mis conocimientos 
+                    en <b>desarrollo de software</b>. Me gusta experimentar con proyectos que combinan <b>creatividad</b> y <b>funcionalidad</b>, explorando maneras de optimizar procesos 
+                    y materializar conceptos de forma práctica y efectiva.
+                    <br>
+                    <br>
+                    Fuera de la programación, encuentro inspiración en la <b>música</b> y el <b>diseño digital</b>. Estos hobbies no solo me ayudan a desconectarme del código, sino que 
+                    también me brindan nuevas perspectivas y formas de expresión que enriquecen mi visión como desarrollador. La búsqueda constante de <b>aprendizaje</b> y nuevas experiencias 
+                    me motiva día a día a seguir creciendo como profesional.
+                </p>
+                <img class="profile-photo" src="/img/profile-photo.webp" alt="Bouix Guillermo">
             </div>
         </section>
         
@@ -268,6 +263,34 @@
             </div>
         </section>
         
+        <section class="services" id="services" data-aos="zoom-in-up">
+            <div class="services-content">
+                <div class="cards">
+                    <!-- Tarjeta Desarrollo Web -->
+                    <article class="web-card card">
+                        <img src="/img/web-card.webp" alt="Diseño Web" class="card-image">
+                        <h2 data-translate="DesarrolloWeb">Desarrollo Web</h2>
+                        <p data-translate="webDescription">
+                            Diseñamos y desarrollamos páginas web modernas y personalizadas, optimizadas para dispositivos móviles 
+                            y con un enfoque en la experiencia del usuario. Si quieres que tu negocio crezca, necesitas un sitio web.
+                        </p>
+
+                        <button class="btn" title="Ver Planes" data-translate="viewPlans" onclick="openModal()">Ver Planes</button>
+                    </article>
+        
+                    <!-- Tarjeta Desarrollo de Software -->
+                    <article class="software-card card">
+                        <img src="/img/software-card.webp" alt="Desarrollo de Software" class="card-image">
+                        <h2 data-translate="softwareDevelopment">Desarrollo de Software</h2>
+                        <p data-translate="softwareDescription">
+                            Creamos soluciones tecnológicas a medida, desde aplicaciones sencillas hasta sistemas más complejos. 
+                            Nuestro enfoque garantiza eficiencia, escalabilidad y seguridad para cubrir necesidades específicas de tu negocio.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="contact" id="contact" data-aos="zoom-in-up">
             <form id="contact-form" method="POST">
                 <div class="fullname-email">
